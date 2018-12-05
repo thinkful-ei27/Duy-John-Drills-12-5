@@ -7,12 +7,12 @@ const arrOfObj = [
 ];
 
 for (let keys in arrOfObj) {
-	let names = arrOfObj[keys].name;
-    let titles = arrOfObj[keys].jobTitle;
-    let bosses = arrOfObj[keys].boss;
-    if (bosses === undefined) {
-        console.log(`${titles} ${names} doesn't report to anybody.`);
-    } else {
-        console.log(`${titles} ${names} reports to ${bosses}`);
-    }
+  let names = arrOfObj[keys].name;
+  let titles = arrOfObj[keys].jobTitle;
+  let bosses = arrOfObj[keys].boss;
+  if (bosses === undefined) {
+    console.log(`${titles} ${names} doesn't report to anybody.`);
+  } else {
+    console.log(`${titles} ${names} reports to ${bosses}`);
+  }
 }
